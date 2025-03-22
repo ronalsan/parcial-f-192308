@@ -2,85 +2,86 @@ import java.util.Scanner;
 
 public class ReMal {
     public static void main(String[] args) throws Exception {
-        Scanner s = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Nombre vendedor:");
-        String a = s.nextLine();
+        String nombre = scanner.nextLine();
 
         System.out.println("Cantidad de productos vendidos:");
-        int p = s.nextInt();
+        int productos = scanner.nextInt();
 
         System.out.println("Ingrese valor producto 1:");
-        double x1 = s.nextDouble();
+        double valor1 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 2:");
-        double x2 = s.nextDouble();
+        double valor2 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 3:");
-        double x3 = s.nextDouble();
+        double valor3 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 4:");
-        double x4 = s.nextDouble();
+        double valor4 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 5:");
-        double x5 = s.nextDouble();
+        double valor5 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 6:");
-        double x6 = s.nextDouble();
+        double valor6 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 7:");
-        double x7 = s.nextDouble();
+        double valor7 = scanner.nextDouble();
 
-        double s1 = 0;
+        double valor = 0;
 
-        if (x1 >= 100000) {
-            s1 = s1 + (x1 * 0.10);
+        if (valor1 >= 100000) {
+            valor = valor + (valor1 * 0.10);
         } else {
-            s1 = s1 + (x1 * 0.05);
+            valor = valor + (valor1 * 0.05);
         }
 
-        if (x2 >= 100000) {
-            s1 = s1 + (x2 * 0.10);
+        if (valor2 >= 100000) {
+            valor = valor1 + (valor2 * 0.10);
         } else {
-            s1 = s1 + (x2 * 0.05);
+            valor = valor1 + (valor2 * 0.05);
         }
 
-        if (x3 >= 100000) {
-            s1 = s1 + (x3 * 0.10);
+        if (valor3 >= 100000) {
+            valor = valor + (valor3 * 0.10);
         } else {
-            s1 = s1 + (x3 * 0.05);
+            valor = valor + (valor3 * 0.05);
         }
 
-        if (x4 >= 100000) {
-            s1 = s1 + (x4 * 0.10);
+        if (valor4 >= 100000) {
+            valor = valor + (valor4 * 0.10);
         } else {
-            s1 = s1 + (x4 * 0.05);
+            valor = valor + (valor4 * 0.05);
         }
 
-        if (x5 >= 100000) {
-            s1 = s1 + (x5 * 0.10);
+        if (valor5 >= 100000) {
+            valor = valor + (valor5 * 0.10);
         } else {
-            s1 = s1 + (x5 * 0.05);
+            valor = valor + (valor5 * 0.05);
         }
 
-        if (x6 >= 100000) {
-            s1 = s1 + (x6 * 0.10);
+        if (valor6 >= 100000) {
+            valor = valor + (valor6 * 0.10);
         } else {
-            s1 = s1 + (x6 * 0.05);
+            valor = valor + (valor6 * 0.05);
         }
 
-        if (x7 >= 100000) {
-            s1 = s1 + (x7 * 0.10);
+        if (valor7 >= 100000) {
+            valor = valor + (valor7 * 0.10);
         } else {
-            s1 = s1 + (x7 * 0.05);
+            valor = valor + (valor7 * 0.05);
         }
 
-        double tt = x1 + x2 + x3 + x4 + x5 + x6 + x7;
-        double ss = (double) (s1 + 1000000);
+        double totalventas = valor1 + valor2 + valor3 + valor4 + valor5 + valor6 + valor7;
+        double salariototal = (double) (valor + 1000000);
 
-        System.out.println("Vendedor: " + a);
-        System.out.println("Total ventas: " + (int) tt);
-        System.out.println("Comisiones: " + (int) s1);
-        System.out.println("Salario total: " + (int) ss);
+        System.out.println("Vendedor: " + nombre);
+        System.out.println("Total ventas: " + (int) totalventas);
+        System.out.println("Comisiones: " + (int) valor);
+        System.out.println("Salario total: " + (int) salariototal);
     }
+    
 }
